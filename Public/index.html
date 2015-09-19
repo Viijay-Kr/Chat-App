@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Chat App</title>
+  <style type="text/css">
+  #container{
+   margin:10px auto;
+   }
+ #chat-container{
+   width:500px;
+   height:500px;
+   border: 5px solid #565;
+   margin:10px auto;
+   overflow-y: auto;
+   visibility: visible;
+ }
+ #status{
+  display: block;
+}
+#chat-message{
+}
+#statussec{
+margin: 10px 0px 0px 375px;
+}
+#statussec span{
+  display: inline-block;
+}
+textarea{
+  margin: 0px 0px 0px 375px;
+}
+</style>
+</head>
+<body>
+  <section id="container">
+    <div id="chat-container">
+      <div id="chat-message">
+
+      </div>
+    </div>
+    <textarea rows="4" cols="81" id="msg" placeholder="Type Message here"></textarea>
+    <br>
+    <br>
+    <div id="statussec">
+    <span>Status :</span><span id="status">Idle</span>
+    </div>
+  </section>
+ <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+ <script type="text/javascript" src="/app.js">
+ </script>
+</body>
+</html>
